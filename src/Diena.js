@@ -1,13 +1,17 @@
 import Stunda from "./Stunda";
 
-function Diena() {
+function Diena(props) {
+  
   return (
   <>
-    <p>Hi diena</p>
-    <Stunda nosaukums="Sports pie Klintas"/>
-    <Stunda nosaukums="Dabaszinības mīlu fiziku"/>
-    <Stunda nosaukums="Vēsture"/>
-    <Stunda nosaukums="🫥"/>
+    <h2>{props.diena}</h2>
+    <ul>
+    <Stunda nosaukums={props.stundas[0]}/>
+    <Stunda nosaukums={props.stundas[1]}/>
+    <Stunda nosaukums={props.stundas[2]}/>
+    <Stunda nosaukums={props.stundas[3]}/>
+    </ul>
+    
   </>
   )
 };

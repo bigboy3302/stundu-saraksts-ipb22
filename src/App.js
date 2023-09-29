@@ -1,10 +1,23 @@
 import Diena from "./Diena";
 
 function App() {
+  const pirmdienasStundas = [
+    "sports pie klintas",
+    "Dabaszinības mīlu fiziku",
+    "Vēsture",
+    "🫥"
+  ]
+  const otradienasStundas = [
+    "kissing my niggas",
+    "suds janoliek",
+    "pie krigerta jaiet ",
+    "🫥"
+  ]
   return (
     <>
       <div>te būs stundu saraksts šodien</div>
-      <Diena />
+      <Diena diena="pirmdiena" stundas={pirmdienasStundas}/>
+      <Diena diena="otradiena" stundas={otradienasStundas}/>
     </>
   )
 }
